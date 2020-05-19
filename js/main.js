@@ -158,7 +158,19 @@ clipboard.on('error', function(e) {
 
 let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
-document.getElementById("1").value = urlParams.get('n')
-document.getElementById("2").value = urlParams.get('b')
-document.getElementById("3").value = urlParams.get('a')
+if (urlParams.get('n') == undefined) {
+  document.getElementById("1").value = "飛渡市";
+} else {
+  document.getElementById("1").value = urlParams.get('n');
+}
+if (urlParams.get('b') == undefined) {
+  document.getElementById("2").value = "再次上報";
+} else {
+  document.getElementById("2").value = urlParams.get('b');
+}
+if (urlParams.get('b') == undefined) {
+  document.getElementById("3").value = "蝙蝠洞國行政局";
+} else {
+  document.getElementById("3").value = urlParams.get('a');
+}
 generate()
