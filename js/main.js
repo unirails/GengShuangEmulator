@@ -155,4 +155,9 @@ clipboard.on('error', function(e) {
   });
 });
 
-random()
+let queryString = window.location.search;
+let urlParams = new URLSearchParams(queryString);
+document.getElementById("1").value = urlParams.get('n')
+document.getElementById("2").value = urlParams.get('b')
+document.getElementById("3").value = urlParams.get('a')
+generate()
