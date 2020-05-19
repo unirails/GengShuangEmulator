@@ -123,6 +123,7 @@ function generate() {
     gs = gengshuang(n, b, a)
     t.innerHTML = gs
     document.getElementById("text").appendChild(t)
+    document.getElementById("4").value = "https://batcavemc.com/GengShuangEmulator/?n=" + n + "&b=" + b + "&a=" + a
   }
 }
 
