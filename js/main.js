@@ -159,12 +159,12 @@ clipboard.on('error', function(e) {
 let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
 if (urlParams.get('n') == undefined) {
-  document.getElementById("1").value = "飛渡市";
+  document.getElementById("1").value = "毒果新聞";
 } else {
   document.getElementById("1").value = urlParams.get('n');
 }
 if (urlParams.get('b') == undefined) {
-  document.getElementById("2").value = "再次上報";
+  document.getElementById("2").value = "不出新聞";
 } else {
   document.getElementById("2").value = urlParams.get('b');
 }
